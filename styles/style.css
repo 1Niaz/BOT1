@@ -2,9 +2,11 @@
 
 :root{
     /* --main-color: #0edac9;
+    --main-color-op: #0edac985;
     --second-color: #00bdad; */
 
     --main-color: #784cd7;
+    --main-color-op: #784cd785;
     --second-color: #fa3ce1;
 }
 
@@ -16,6 +18,10 @@
     box-sizing: border-box;
     font-family: "Montserrat", serif;
     text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 .container{
@@ -254,7 +260,7 @@
     z-index: -1;
     border-radius: 20px;
     transform: rotate(0);
-    background-color: #833cfa;
+    background-color: var(--main-color);
     transform-origin: top left;
     transition: .3s;
 }
@@ -396,7 +402,115 @@
 
 
 
+/* MARKETING START */
 
+
+.marketing__article{
+    background: url('./../images/marketing/bg-purple.jpg') center no-repeat;
+    background-size: cover;
+    height: 427px;
+    padding: 110px 0 80px 0;
+    color: #fff;
+    position: relative;
+}
+
+.marketing__article::before{
+    content: "";
+    position: absolute;
+    width: 17.5rem;
+    height: 21rem;
+    top: calc(44% + 20px);
+    left: calc(40% + 35px);
+    background-image: url('./../images/marketing/human.png');
+    background-size: 17.5rem 21rem;
+    background-repeat: no-repeat;
+}
+
+.marketing__article .container{
+    display: grid;
+    grid-template-columns: 2.2fr 1.5fr;
+    gap: 115px;
+}
+
+.marketing__title{
+    text-transform: uppercase;
+    font-size: 48px;
+}
+
+.marketing__text{
+    font-size: 20px;
+    margin: 16px 0;
+}
+
+.marketing__list{
+    margin: 50px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.marketing__list__item{
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    gap: 30px;
+    align-items: center;
+    font-weight: 700;
+}
+
+.marketing__list__item p{
+    font-size: 20px;
+    text-align: left;
+}
+
+@media screen and (max-width: 1200px) {
+    .marketing__article{
+        height: 800px;
+        padding: 35px 0 0 0;
+    }
+    .marketing__article::before{
+        background-size: 227px;
+        top: calc(50% + 155px);
+        left: calc(50% + 35px);
+    }
+    .marketing__article .container{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+    .marketing__text{
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .marketing__title{
+        font-size: 28px;
+        width: 280px;
+    }
+    .marketing__list__item{
+        border: 1px solid #fff;
+        border-radius: 40px;
+        padding: 16px;
+    }
+    .marketing__list__item img{
+        width: 32px;
+        height: 32px;
+    }
+    .marketing__list__item p{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .marketing__article::before{
+        top: calc(60% + 110px);
+        left: calc(15% + 10px);
+        background-size: 215px;
+    }
+}
+
+
+
+
+/* MARKETING END */
 
 
 
