@@ -294,6 +294,9 @@
 @media screen and (max-width: 768px) {
     .services{
         overflow-x: scroll;
+        margin-bottom: 40px;
+        border-radius: 20px;
+        background-color: #fff;
     }
     .service{
         width: 300px;
@@ -359,13 +362,27 @@
     .ladno{
         display: flex;
         flex-direction: column;
-        gap: 16px;
+        gap: 0px;
+    }
+    .ladno__left{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .ladno__cover{
+        order: 1;
     }
     .ladno__title_1, .ladno__title_2{
         text-align: left;
     }
+    .ladno__title_1{
+        font-size: 16px;
+        order: 2;
+        margin: 0;
+    }
     .ladno__title_2{
         font-size: 22px;
+        margin: 24px 0 0 0;
     }
     .ladno__desc{
         font-size: 14px;
