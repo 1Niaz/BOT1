@@ -507,6 +507,14 @@ html{
     }
 }
 
+@media screen and (max-width: 341px) {
+    .marketing__article::before{
+        width: 240px;
+        top: calc(60% + 110px);
+        left: calc(12% + 10px);
+        background-size: 215px;
+    }
+}
 
 
 
