@@ -601,14 +601,13 @@ body{
 }
 
 .marketing__cards__item{
-    transition: 0.3s;
     padding: 50px;
     background-color: #fff;
     border-radius: 20px;
     height: 400px;
-
     display: flex;
     flex-direction: column;
+    transition: 0.3s;
 }
 .marketing__cards__item:hover{
     box-shadow: -20px 10px 50px rgba(52, 64, 100, 0.322);
@@ -647,6 +646,12 @@ body{
     align-items: end;
 }
 
+.more__button{
+    margin-top: 40px;
+    /* width: 200px; */
+}
+
+
 @media screen and (max-width: 1200px) {
     .cards__container{
         overflow: hidden;
@@ -671,10 +676,6 @@ body{
 }
 
 
-
-
-
-
 /* MARKETING END */
 
 
@@ -682,6 +683,124 @@ body{
 
 
 
+/* FEEDBACKS START */
+
+.feedbacks__section{
+    background: url('./../images/marketing/bg-purple.jpg') no-repeat center;
+    background-size: cover;
+    padding: 100px 0;
+}
+
+.feedbacks__title{
+    color: #fff;
+    font-size: 55px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.all__feedbacks{
+    display: flex;
+    justify-content: center;
+}
+
+.all__feedbacks .button{
+    background-color: #c9fce3;
+    color: #4f4f4f;
+}
+
+.all__feedbacks .button::before{
+    background-color: #adf3d1;
+}
+
+@media screen and (max-width: 1200px) {
+    .feedbacks__title{
+        font-size: 32px;
+        text-align: center;
+    }
+}
+
+
+.feedbacks__cards__list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.feedbacks__cards__item{
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 40px;
+}
+
+.feedback__header{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.feedback__author{
+    font-size: 20px;
+}
+
+.feedback__avatar{
+    overflow: hidden;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feedback__avatar img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.feedback__info{
+    height: 98px;
+    overflow: hidden;
+    margin: 30px 0;
+}
+
+.feedback__read{
+    text-decoration: underline;
+    color: var(--main-color);
+    font-size: 14px;
+}
+
+@media screen and (max-width: 1200px) {
+    .feedbacks__cards__list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .feedbacks__cards__list{
+        grid-template-columns: 1fr;
+    }
+    .feedbacks__cards__item{
+        padding: 30px;
+        width: 100%;
+    }
+    /* .feedback__info{
+        width: min(250px, 100%);
+    } */
+}
+
+@media screen and (max-width: 350px) {
+    .feedbacks__cards__item{
+        width: 90vw;
+        margin: 0 auto;
+    }
+}
+
+
+
+
+/* FEEDBACKS END */
 
 
 
