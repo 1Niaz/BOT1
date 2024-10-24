@@ -541,6 +541,7 @@ body{
 
 .marketing__info{
     width: 880px;
+    margin: 0 auto;
 }
 
 .marketing__cards__text{
@@ -647,7 +648,7 @@ body{
 
 @media screen and (max-width: 1200px) {
     .cards__container{
-        overflow: auto;
+        overflow: scroll;
     }
     .marketing__cards__list {
         /* margin: 0 0 0 1000px; */
