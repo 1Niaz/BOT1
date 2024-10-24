@@ -304,22 +304,19 @@ body{
     transition: 0.3s;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
     .services{
-        overflow-x: scroll;
         margin-bottom: 40px;
         border-radius: 20px;
         background-color: #fff;
+        overflow: hidden;
+        display: flex;
+        position: relative;
     }
     .service{
+        /* flex: 0 0 100vw; */
         width: 300px;
-    }
-    .service:hover .icon{
-        background-color: #f5f5f5;
-        /* transform: none; */
-        svg{
-            color: #000;
-        }
+        flex-shrink: 0;
     }
     .service::after{
         display: none;
@@ -570,6 +567,10 @@ body{
     .marketing__info{
         width: 100%;
     }
+    .marketing__cards__item{
+        padding: 30px;
+        height: 400px;
+    }
     .marketing__cards__title, .marketing__cards__desc, .marketing__cards__text{
         text-align: left;
     }
@@ -648,18 +649,18 @@ body{
 
 @media screen and (max-width: 1200px) {
     .cards__container{
-        overflow: scroll;
+        overflow: hidden;
     }
     .marketing__cards__list {
-        /* margin: 0 0 0 1000px; */
-        overflow-x: auto; 
+        position: relative;
         display: flex;
         flex-wrap: nowrap;
-        justify-content: flex-start;
+        /* justify-content: flex-start; */
         gap: 20px;
         padding-bottom: 10px;
     }
     .marketing__cards__item{
+        flex-shrink: 0;
         width: 300px;
         height: 450px;
         box-shadow: -20px 10px 20px rgba(155, 155, 155, 0.055);
