@@ -317,6 +317,7 @@ body{
         /* flex: 0 0 100vw; */
         width: 300px;
         flex-shrink: 0;
+        box-shadow: -20px 10px 30px rgba(180, 180, 180, 0.199);
     }
     .service::after{
         display: none;
