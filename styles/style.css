@@ -24,6 +24,7 @@
 
 html{
     scroll-behavior: smooth;
+    cursor: default;
 }
 
 body{
@@ -690,6 +691,7 @@ body{
     background: url('./../images/marketing/bg-purple.jpg') no-repeat center;
     background-size: cover;
     padding: 100px 0;
+    position: relative;
 }
 
 .feedbacks__title{
@@ -706,12 +708,12 @@ body{
 }
 
 .all__feedbacks .button{
-    background-color: #c9fce3;
+    background-color: #81dfb1;
     color: #4f4f4f;
 }
 
 .all__feedbacks .button::before{
-    background-color: #adf3d1;
+    background-color: #9bffce;
 }
 
 @media screen and (max-width: 1200px) {
@@ -770,25 +772,26 @@ body{
     text-decoration: underline;
     color: var(--main-color);
     font-size: 14px;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 1200px) {
     .feedbacks__cards__list{
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
+    }
+    .feedbacks__cards__item{
+        padding: 30px;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 720px) {
     .feedbacks__cards__list{
         grid-template-columns: 1fr;
     }
     .feedbacks__cards__item{
-        padding: 30px;
         width: 100%;
     }
-    /* .feedback__info{
-        width: min(250px, 100%);
-    } */
 }
 
 @media screen and (max-width: 350px) {
@@ -799,6 +802,41 @@ body{
 }
 
 
+.one__feedback{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.one__feedback.active__block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.one__feedback__bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 990;
+}
+
+.one__feedback__info{
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 40px;
+    z-index: 991;
+    width: 600px;
+}
+
+.one__feedback__header{
+    position: relative;
+}
 
 
 /* FEEDBACKS END */
