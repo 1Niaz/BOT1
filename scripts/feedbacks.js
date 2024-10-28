@@ -9,19 +9,22 @@ ReadFeedbackBtns.forEach(ReadFeedbackBtn => {
     ReadFeedbackBtn.addEventListener('click', () => {
         Feedback.classList.add('active__block')
         document.body.style.overflow = 'hidden'
-        allFeedbacks.style.display = 'none'
+        // allFeedbacks.style.display = 'none'
+        allFeedbacks.classList.add('hidden')
     })
 
     FeedbackCross.addEventListener('click', () => {
         Feedback.classList.remove('active__block')
         document.body.style.overflow = ''
-        allFeedbacks.style.display = 'flex'
+        // allFeedbacks.style.display = 'flex'
+        allFeedbacks.classList.remove('hidden')
     })
 
     FeedbackBG.addEventListener('click', () => {
         Feedback.classList.remove('active__block')
         document.body.style.overflow = ''
-        allFeedbacks.style.display = 'flex'
+        // allFeedbacks.style.display = 'flex'
+        allFeedbacks.classList.remove('hidden')
     })
     
     
