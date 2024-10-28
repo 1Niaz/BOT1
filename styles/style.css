@@ -767,7 +767,7 @@ body{
     height: 98px;
     overflow: hidden;
     margin: 30px 0;
-    color: #6e7097;
+    color: var(--light-text);;
 }
 
 .feedback__read{
@@ -815,7 +815,7 @@ body{
     position: absolute;
     top: 15px;
     right: 15px;
-    color: #6e7097;
+    color: var(--light-text);;
     width: 40px;
     height: 40px;
 }
@@ -908,6 +908,7 @@ body{
 
 .directions__item{
     background-color: #f6f7fa;
+    color: #000;
     padding: 45px 0 45px 35px;
     transition: 0.3s;
     display: flex;
@@ -979,7 +980,7 @@ body{
 
 .advantages__text{
     margin-top: 24px;
-    color: #6e7097;
+    color: var(--light-text);;
     letter-spacing: 1.5px;
     font-size: 20px;
     font-weight: 400;
@@ -1069,7 +1070,97 @@ body{
 
 
 
+/* QUESTIONS START */
 
+.questions__text{
+    color: var(--light-text);;
+    text-transform: lowercase;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 24px 0 30px 0;
+}
+
+.questions__title{
+    font-size: 55px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.questions__item svg{
+    color: var(--main-color);
+    width: 20px;
+}
+
+.questions__list{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 70px;
+}
+
+.questions__item{
+    padding: 16px;
+    background-color: #fff;
+    box-shadow: 0 0 10px #38383828;
+}
+.questions__item:hover{
+    cursor: pointer;
+}
+
+.question__header{
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.question__name{
+    font-size: 20px;
+}
+
+.question__plus{
+    display: block;
+}
+
+.question__minus{
+    display: none;
+}
+
+.question__info{
+    margin-top: 30px;
+    display: none;
+}
+
+.questions__item.active .question__info {
+    display: block;
+}
+
+.questions__item.active .question__minus{
+    display: block;
+}
+.questions__item.active .question__plus{
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .questions__title{
+        font-size: 32px;
+    }
+    .questions__text{
+        font-size: 16px;
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .questions__title{
+        font-size: 22px;
+    }
+}
+
+
+
+/* QUESTIONS END */
 
 
 
