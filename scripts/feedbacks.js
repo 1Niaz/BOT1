@@ -1,4 +1,5 @@
 const ReadFeedbackBtns = document.querySelectorAll('.feedback__read')
+const allFeedbacks = document.querySelector('.all__feedbacks')
 
 ReadFeedbackBtns.forEach(ReadFeedbackBtn => {
     const Feedback = ReadFeedbackBtn.closest('.feedbacks__cards__item').querySelector('.one__feedback')
@@ -8,16 +9,19 @@ ReadFeedbackBtns.forEach(ReadFeedbackBtn => {
     ReadFeedbackBtn.addEventListener('click', () => {
         Feedback.classList.add('active__block')
         document.body.style.overflow = 'hidden'
+        allFeedbacks.style.display = 'none'
     })
 
     FeedbackCross.addEventListener('click', () => {
         Feedback.classList.remove('active__block')
         document.body.style.overflow = ''
+        allFeedbacks.style.display = 'flex'
     })
 
     FeedbackBG.addEventListener('click', () => {
         Feedback.classList.remove('active__block')
         document.body.style.overflow = ''
+        allFeedbacks.style.display = 'flex'
     })
     
     
