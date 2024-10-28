@@ -4,14 +4,11 @@
     /* --main-color: #0edac9;
     --main-color-op: #0edac985;
     --second-color: #00bdad; */
-
     --main-color: #784cd7;
     --main-color-op: #784cd785;
     --second-color: #fa3ce1;
-
     --light-text: #6e7097;
 }
-
 
 
 *{
@@ -46,19 +43,15 @@ body{
     width: 8px;
     height: 0px;
 }
-
 ::-webkit-scrollbar-track {
     background: #f1f1f1;
 }
-
 ::-webkit-scrollbar-thumb {
     background: #784cd7; 
 }
-
 ::-webkit-scrollbar-thumb:hover {
     background: #6336b5;
 }
-
 ::-webkit-scrollbar-button {
     display: none;
 }
@@ -69,14 +62,7 @@ body{
 
 
 
-
-
-
-
-
-
 /* HEADER START */
-
 
 .header{
     padding: 20px 0;
@@ -140,17 +126,13 @@ body{
 }
 
 
-
 /* HEADER END */
 
 
 
 
 
-
-
 /* INTRO START */
-
 
 .intro__section{
     background: url('./../images/intro/intro-bg.jpg') center no-repeat;
@@ -224,11 +206,7 @@ body{
 
 
 
-
-
-
 /* SERVICE START */
-
 
 .service__section{
     padding: 50px 0 100px 0;
@@ -305,6 +283,7 @@ body{
     transition: 0.3s;
 }
 
+
 @media screen and (max-width: 1200px) {
     .services{
         margin-bottom: 40px;
@@ -324,8 +303,6 @@ body{
         display: none;
     }
 }
-
-
 
 
 .ladno{
@@ -370,6 +347,7 @@ body{
     font-size: 18px;
 }
 
+
 @media screen and (max-width: 768px) {
     .ladno{
         display: flex;
@@ -409,8 +387,6 @@ body{
 
 
 /* MARKETING START */
-
-
 
 .marketing__article{
     background: url('./../images/marketing/bg-purple.jpg') center no-repeat;
@@ -469,6 +445,7 @@ body{
     text-align: left;
 }
 
+
 @media screen and (max-width: 1200px) {
     .marketing__article{
         height: 800px;
@@ -506,6 +483,7 @@ body{
     }
 }
 
+
 @media screen and (max-width: 768px) {
     .marketing__article::before{
         top: calc(60% + 110px);
@@ -513,6 +491,7 @@ body{
         background-size: 215px;
     }
 }
+
 
 @media screen and (max-width: 341px) {
     .marketing__article::before{
@@ -522,13 +501,6 @@ body{
         background-size: 215px;
     }
 }
-
-
-
-
-
-
-
 
 
 .marketing__cards{
@@ -587,6 +559,7 @@ body{
         font-size: 16px;
     }
 }
+
 
 @media screen and (max-width: 480px) {
     .marketing__cards__title{
@@ -651,7 +624,7 @@ body{
 
 .more__button{
     margin-top: 40px;
-    z-index: -1;
+    z-index: 0;
     /* width: 200px; */
 }
 
@@ -681,7 +654,6 @@ body{
 
 
 /* MARKETING END */
-
 
 
 
@@ -723,6 +695,7 @@ body{
     filter: brightness(30%);
     opacity: 0;
 }
+
 
 @media screen and (max-width: 1200px) {
     .feedbacks__title{
@@ -784,6 +757,7 @@ body{
     cursor: pointer;
 }
 
+
 @media screen and (max-width: 1200px) {
     .feedbacks__cards__list{
         display: grid;
@@ -794,6 +768,7 @@ body{
     }
 }
 
+
 @media screen and (max-width: 720px) {
     .feedbacks__cards__list{
         grid-template-columns: 1fr;
@@ -803,15 +778,13 @@ body{
     }
 }
 
+
 @media screen and (max-width: 350px) {
     .feedbacks__cards__item{
         width: 90vw;
         margin: 0 auto;
     }
 }
-
-
-
 
 
 .one__feedback__header{
@@ -892,7 +865,6 @@ body{
 
 
 
-
 /* DIRECTIONS START */
 
 .directions__section{
@@ -945,9 +917,6 @@ body{
     padding: 45px 35px;
 }
 
-.all__directions .direction__name{
-    transform: translateX(calc(-35px + 20px));
-}
 
 @media screen and (max-width: 1200px) {
     .directions__list{
@@ -956,7 +925,9 @@ body{
     .direction__title{
         font-size: 32px;
     }
+    
 }
+
 
 @media screen and (max-width: 768px) {
     .directions__list{
@@ -971,7 +942,11 @@ body{
     .direction__name{
         font-size: 16px;
     }
+    .all__directions .direction__name{
+        transform: translateX(calc(-35px + 20px));
+    }
 }
+
 
 @media screen and (max-width: 500px) {
     .direction__title{
@@ -1043,6 +1018,7 @@ body{
     font-size: 18px;
 }
 
+
 @media screen and (max-width: 1200px) {
     .advantages__text{
         font-size: 16px;
@@ -1073,12 +1049,7 @@ body{
 }
 
 
-
-
-
 /* ADVANTAGES END */
-
-
 
 
 
@@ -1156,6 +1127,7 @@ body{
     display: none;
 }
 
+
 @media screen and (max-width: 1200px) {
     .questions__title{
         font-size: 32px;
@@ -1172,6 +1144,7 @@ body{
     }
 }
 
+
 @media screen and (max-width: 500px) {
     .questions__title{
         font-size: 22px;
@@ -1179,9 +1152,7 @@ body{
 }
 
 
-
 /* QUESTIONS END */
-
 
 
 
@@ -1224,6 +1195,7 @@ body{
     font-size: 14px;
 }
 
+
 @media screen and (max-width: 1200px) {
     .top__block .container{
         align-items: center;
@@ -1234,10 +1206,8 @@ body{
     }
 }
 
+
 /* FOOTER END */
-
-
-
 
 
 
