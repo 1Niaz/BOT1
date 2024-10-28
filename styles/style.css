@@ -705,6 +705,7 @@ body{
 .all__feedbacks{
     display: flex;
     justify-content: center;
+    z-index: 0;
 }
 
 .all__feedbacks .button{
@@ -766,6 +767,7 @@ body{
     height: 98px;
     overflow: hidden;
     margin: 30px 0;
+    color: #6e7097;
 }
 
 .feedback__read{
@@ -802,19 +804,20 @@ body{
 }
 
 
-.one__feedback{
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: none;
+
+
+
+.one__feedback__header{
+    position: relative;
 }
 
-.one__feedback.active__block{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.one__feedback__cross{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: #6e7097;
+    width: 40px;
+    height: 40px;
 }
 
 .one__feedback__bg{
@@ -826,16 +829,52 @@ body{
     z-index: 990;
 }
 
-.one__feedback__info{
+.one__feedback {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.one__feedback.active__block {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.one__feedback__info {
     background-color: #fff;
     border-radius: 20px;
     padding: 40px;
     z-index: 991;
     width: 600px;
+    transform: scale(0.95);
+    transition: transform 0.3s ease;
 }
 
-.one__feedback__header{
-    position: relative;
+.one__feedback__info .feedback__info{
+    overflow: visible;
+    height: auto;
+}
+
+.one__feedback.active__block .one__feedback__info {
+    transform: scale(1);
+}
+
+
+@media screen and (max-width: 768px) {
+    .one__feedback{
+        padding: 0 20px;
+    }
+    .one__feedback__info{
+        width: 100%;
+    }
 }
 
 
