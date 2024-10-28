@@ -935,7 +935,11 @@ body{
     border-radius: 5px;
     justify-content: center;
     gap: 0;
-    padding: 45px 0;
+    padding: 45px 35px;
+}
+
+.all__directions .direction__name{
+    transform: translateX(calc(-35px + 20px));
 }
 
 @media screen and (max-width: 1200px) {
