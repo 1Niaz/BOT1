@@ -885,6 +885,89 @@ body{
 
 
 
+/* DIRECTIONS START */
+
+.directions__section{
+    padding: 100px 0;
+}
+
+.direction__title{
+    text-align: center;
+    font-size: 55px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.directions__list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.directions__item{
+    background-color: #f6f7fa;
+    padding: 45px 0 45px 35px;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 26px;
+}
+
+.direction__icon{
+    width: 31px;
+}
+
+.directions__item:hover{
+    box-shadow: -10px 15px 20px rgba(47, 62, 113, 0.301);
+    transition: 0.3s;
+}
+
+.direction__name{
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.all__directions{
+    border: 1px solid var(--main-color);
+    border-radius: 5px;
+    justify-content: center;
+    gap: 0;
+    padding: 45px 0;
+}
+
+@media screen and (max-width: 1200px) {
+    .directions__list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .direction__title{
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .directions__list{
+        grid-template-columns: 1fr;
+    }
+    .directions__item{
+        padding: 20px 0 20px 30px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .direction__title{
+        font-size: 22px;
+    }
+}
+
+
+/* DIRECTIONS END */
+
+
+
+
+
+
 
 
 
