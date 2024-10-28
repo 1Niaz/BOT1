@@ -957,6 +957,9 @@ body{
     .directions__section{
         padding: 50px 0;
     }
+    .direction__name{
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 500px) {
