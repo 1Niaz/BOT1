@@ -7,7 +7,9 @@
     --main-color: #784cd7;
     --main-color-op: #784cd785;
     --second-color: #fa3ce1;
+    --second-color-o: #c445ff;
     --light-text: #6e7097;
+    --white: #fff;
 }
 
 
@@ -47,10 +49,7 @@ body{
     background: #f1f1f1;
 }
 ::-webkit-scrollbar-thumb {
-    background: #784cd7; 
-}
-::-webkit-scrollbar-thumb:hover {
-    background: #6336b5;
+    background: var(--main-color); 
 }
 ::-webkit-scrollbar-button {
     display: none;
@@ -66,7 +65,7 @@ body{
 
 .header{
     padding: 20px 0;
-    background-color: #fff;
+    background-color: var(--white);;
 }
 
 .header .container{
@@ -88,7 +87,7 @@ body{
     font-weight: bold;
     font-size: 16px;
     padding: 15px 35px;
-    color: #fff;
+    color: var(--white);;
     background-color: var(--second-color);
     border-radius: 50px;
     overflow: hidden;
@@ -140,7 +139,7 @@ body{
     width: 100%;
     height: 100%;
     padding: 90px 0;
-    color: #fff;
+    color: var(--white);;
 }
 
 .intro__section .container{
@@ -228,7 +227,7 @@ body{
 
 .service__inner{
     border-radius: 20px;
-    background-color: #fff;
+    background-color: var(--white);;
     padding: 45px 40px;
     width: 100%;
     height: 100%;
@@ -271,7 +270,7 @@ body{
 }
 .service:hover .icon{
     /* background-color: var(--main-color); */
-    background: linear-gradient(to top right, var(--main-color), #c445ff);
+    background: linear-gradient(to top right, var(--main-color), var(--second-color-o));
     transition: 0.3s;
 }
 
@@ -279,7 +278,7 @@ body{
     transition: 0.3s;
 }
 .service:hover svg{
-    color: #fff;
+    color: var(--white);;
     transition: 0.3s;
 }
 
@@ -288,7 +287,7 @@ body{
     .services{
         margin-bottom: 40px;
         border-radius: 20px;
-        background-color: #fff;
+        background-color: var(--white);;
         overflow: hidden;
         display: flex;
         position: relative;
@@ -320,7 +319,7 @@ body{
 }
 
 .ladno__cover{
-    /* background-color: #fff; */
+    /* background-color: var(--white);; */
     border-radius: 10px;
     box-shadow: -40px 40px 100px rgba(42, 76, 129, .35);
 }
@@ -393,7 +392,7 @@ body{
     background-size: cover;
     height: 427px;
     padding: 110px 0 80px 0;
-    color: #fff;
+    color: var(--white);;
     position: relative;
 }
 
@@ -470,7 +469,7 @@ body{
         width: 280px;
     }
     .marketing__list__item{
-        border: 1px solid #fff;
+        border: 1px solid var(--white);;
         border-radius: 40px;
         padding: 16px;
     }
@@ -577,7 +576,7 @@ body{
 
 .marketing__cards__item{
     padding: 50px;
-    background-color: #fff;
+    background-color: var(--white);;
     border-radius: 20px;
     height: 400px;
     display: flex;
@@ -669,7 +668,7 @@ body{
 }
 
 .feedbacks__title{
-    color: #fff;
+    color: var(--white);;
     font-size: 55px;
     font-weight: 900;
     text-transform: uppercase;
@@ -712,7 +711,7 @@ body{
 }
 
 .feedbacks__cards__item{
-    background-color: #fff;
+    background-color: var(--white);;
     border-radius: 20px;
     padding: 40px;
 }
@@ -830,7 +829,7 @@ body{
 }
 
 .one__feedback__info {
-    background-color: #fff;
+    background-color: var(--white);;
     border-radius: 20px;
     padding: 40px;
     z-index: 991;
@@ -1085,7 +1084,7 @@ body{
 
 .questions__item{
     padding: 16px;
-    background-color: #fff;
+    background-color: var(--white);;
     box-shadow: 0 0 10px #38383828;
 }
 .questions__item:hover{
@@ -1161,7 +1160,7 @@ body{
 /* FOOTER START */
 
 .footer{
-    color: #fff;
+    color: var(--white);;
 }
 
 .top__block{
