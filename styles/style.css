@@ -318,19 +318,21 @@ body{
     .services{
         margin-bottom: 40px;
         border-radius: 20px;
-        background-color: var(--white);
+        background-color: var(--color-bg);
         overflow: hidden;
         display: flex;
         position: relative;
+        padding-left: 20px;
     }
     .service{
         /* flex: 0 0 100vw; */
         width: 300px;
         flex-shrink: 0;
-        box-shadow: -20px 10px 30px rgba(180, 180, 180, 0.199);
+        /* box-shadow: -20px 10px 30px rgba(180, 180, 180, 0.199); */
+        box-shadow: none;
     }
     .service::after{
-        display: none;
+        /* display: none; */
     }
 }
 
